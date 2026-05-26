@@ -1,29 +1,105 @@
-# Raylib-CPP-Starter-Template-for-VSCODE-V2
-Raylib C++ Starter Template for Visual Studio Code on Windows.
-This demo project contains a bouncing ball raylib example program.
-It works with raylib version 5.0. Tested on both Windows 10 and Windows 11.
+# GameHT - Raylib Game Project
 
-# How to use this template
-1. Double click on the main.code-workspace file. This will open the template in VS Code.
-2. From the Explorer Window of VS Code navigate to the src folder and double click on the main.cpp file.
-3. Press F5 on the keyboard to compile and run the program.
+Dự án game được phát triển bằng **C++** sử dụng thư viện **Raylib** cho graphics và game development.
 
-# What's changed
-The template now uses folders for better organizion of the files. So, all the source code now lives in the src folder.
+## 📋 Yêu cầu hệ thống
 
-# Video Tutorial
+- **Windows 10 / Windows 11** (hoặc hỗ trợ các nền tảng khác tùy theo cấu hình)
+- **Visual Studio Code** (hoặc IDE C++ khác)
+- **C++ Compiler** (GCC, Clang, MSVC)
+- **Raylib 5.0** trở lên
+- **Python** (cho các script hỗ trợ - 3.6%)
+- **CMake** hoặc hệ thống build tương tự
 
-<p align="center">
-  <img src="preview.jpg" alt="" width="800">
-</p>
+## 🚀 Cài đặt & Chạy
 
-<p align="center">
-🎥 <a href="https://www.youtube.com/watch?v=PaAcVk5jUd8">Video Tutorial on YouTube</a>
-</p>
+### Bước 1: Clone repo
+```bash
+git clone https://github.com/6551020006-coder/gameht.git
+cd gameht
+```
 
-<br>
-<br>
-<p align="center">
-| 📺 <a href="https://www.youtube.com/channel/UC3ivOTE5EgpmF2DHLBmWIWg">My YouTube Channel</a>
-| 🌍 <a href="http://www.programmingwithnick.com">My Website</a> | <br>
-</p>
+### Bước 2: Mở trong Visual Studio Code
+```bash
+code main.code-workspace
+```
+
+Hoặc double-click vào file `main.code-workspace` để tự động mở.
+
+### Bước 3: Biên dịch & Chạy
+- Mở file `src/main.cpp` từ Explorer
+- Nhấn **F5** để compile và run chương trình
+
+## 📁 Cấu trúc dự án
+
+```
+gameht/
+├── src/                 # Source code C++
+│   └── main.cpp         # File chính
+├── main.code-workspace  # VS Code workspace configuration
+├── README.md           # Tài liệu này
+└── preview.jpg         # Hình ảnh xem trước
+```
+
+## 🎮 Tính năng
+
+- ✅ Template cơ bản Raylib cho C++
+- ✅ Ví dụ bouncing ball
+- ✅ Cấu hình sẵn cho VS Code
+- ✅ Hỗ trợ Raylib 5.0
+
+## 🛠️ Công nghệ sử dụng
+
+- **C++** (95.5%) - Lập trình game
+- **Python** (3.6%) - Script hỗ trợ
+- **Batch** (0.9%) - Build script
+
+## 📚 Tài liệu
+
+- 🎥 [Video Tutorial trên YouTube](https://www.youtube.com/watch?v=PaAcVk5jUd8)
+- 🌍 [Website - Programming with Nick](http://www.programmingwithnick.com)
+- 📖 [Raylib Documentation](https://www.raylib.com/)
+
+## 💡 Hướng dẫn nhanh
+
+```cpp
+// Ví dụ cơ bản với Raylib
+#include "raylib.h"
+
+int main() {
+    InitWindow(800, 600, "My Game");
+    
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        ClearBackground(RAYWHITE);
+        DrawText("Hello, Raylib!", 10, 10, 20, BLACK);
+        EndDrawing();
+    }
+    
+    CloseWindow();
+    return 0;
+}
+```
+
+## 🤝 Đóng góp
+
+Nếu bạn muốn cải thiện dự án:
+1. Fork repository này
+2. Tạo branch mới (`git checkout -b feature/YourFeature`)
+3. Commit changes (`git commit -m 'Add YourFeature'`)
+4. Push to branch (`git push origin feature/YourFeature`)
+5. Tạo Pull Request
+
+## 📝 License
+
+Dự án này không có license được chỉ định. Vui lòng thêm license nếu cần.
+
+## ❓ Troubleshooting
+
+- **Lỗi compile**: Kiểm tra Raylib 5.0 đã cài đặt đúng?
+- **F5 không hoạt động**: Chắc chắn `main.code-workspace` đã được mở
+- **Missing libraries**: Cài đặt các dependencies cần thiết
+
+---
+
+Made with ❤️ by [6551020006-coder](https://github.com/6551020006-coder)
